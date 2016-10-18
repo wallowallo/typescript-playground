@@ -45,3 +45,4 @@ let myPlayer = new Player(100, "Rekt", 1);
 console.log("build new player " + myPlayer.name);
 myPlayer.doDamage(firstCrab);
 firstCrab.doDamage(myPlayer);
+firstCrab.doDamage(myPlayer);
