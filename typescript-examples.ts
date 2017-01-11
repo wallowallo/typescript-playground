@@ -50,6 +50,16 @@ class Person{
     this.weight = weight;
     this.kind = kind;
   }
+
+  static baby(name: string, parents: Person[]) {
+    return {
+      name: name,
+      parents: parents
+    }
+  }
 }
 
 let bob = new Person("Bob", "Boy Wonder", 180, 90, true); //creates bob as an instance of Person
+let francine = new Person("Francine", "Fran", 175, 70, true);
+
+let baby = Person.baby("Frank", [bob, francine]);
