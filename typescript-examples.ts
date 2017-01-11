@@ -17,7 +17,7 @@ let returnSomeThing = (someThing: thing) => {
   console.log('string = ', someThing)
 }
 
-returnSomeThing(false);
+//returnSomeThing(false); returns a compiler error since it is not a string
 returnSomeThing("hello world")
 returnSomeThing(["hey", "there", "world"])
 
