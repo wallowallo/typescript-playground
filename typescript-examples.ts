@@ -21,4 +21,35 @@ returnSomeThing(false);
 returnSomeThing("hello world")
 returnSomeThing(["hey", "there", "world"])
 
+//Interface
+interface OptionalAttributes {
+  alias?: string; // the '?' makes them optional to use
+  kind?: boolean;
+}
+
+interface Person extends OptionalAttributes {
+  name: string;
+  height: number;
+  weight: number;
+}
+
+let friend: Person = {
+  name: "Bob",
+  alias: "Boy wonder",
+  height: 180,
+  weight: 90,
+  kind: true
+};
+
 //Constructor:
+class Person{
+  constructor(name: string, alias: string, height: number, weight: number, kind: boolean) {
+    this.name = name;
+    this.alias = alias;
+    this.height = height;
+    this.weight = weight;
+    this.kind = kind;
+  }
+}
+
+let bob = new Person("Bob", "Boy Wonder", 180, 90, true); //creates bob as an instance of Person
