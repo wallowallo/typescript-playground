@@ -61,5 +61,4 @@ class Person{
 
 let bob = new Person("Bob", "Boy Wonder", 180, 90, true); //creates bob as an instance of Person
 let francine = new Person("Francine", "Fran", 175, 70, true);
-
 let baby = Person.baby("Frank", [bob, francine]);
